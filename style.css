@@ -1,0 +1,725 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins','sans-serif';
+}
+
+body{
+    background: linear-gradient(50deg, #1d1a1a,#2b1e1e);
+}
+
+/* about nav */
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+
+nav{
+    poition: relative;
+    width: 555px;
+    height: 50px;
+    background: #222;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+/* nav bar name */
+nav a{
+    position: relative;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #fff;
+    left: 0px;
+    text-decoration: none;
+    padding: 0 25px;
+    z-index: 1;
+}
+/* red color block on the nav */
+
+nav span{
+    position: absolute;
+    top: 15;
+    left:30%;
+    background: linear-gradient(50deg, #4f1919,#ff3333);
+    width: 110px;
+    height: 50px;
+    border-radius: 8px;
+    transition: .5s;    
+}
+
+ nav a:nth-child(1):hover~span{
+    left:30%;
+}
+
+nav a:nth-child(2):hover~span{
+    left:39%;
+    width: 95px;
+}
+
+nav a:nth-child(3):hover~span{
+    left: 45%;
+    width: 85px;
+}
+
+nav a:nth-child(4):hover~span{
+    left: 52%;
+}
+
+nav a:nth-child(5):hover~span{
+    left:60%;
+    width: 130px;
+} 
+
+/* section  */
+section{
+    display: inline;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 250px;
+}
+
+/* circle */
+.circle{
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    left: 28vh;
+    top: 30%;
+    display: inline-flex;
+    background-color: rgb(113, 12, 12);
+    opacity: 0.3;
+    box-shadow: 0px 15px 50px 15px red;
+}
+
+/* photo of profiler */
+img{
+    display: flex;
+    left: 200px;
+    height: 60%;
+    overflow: hidden;
+    position: absolute;
+}
+
+/* priyanshi goyal */
+h1{
+    display: flex;
+    position: absolute;
+    color: #ffff;
+    left: 44%;
+    top: 25%;
+    font-size: 42PX;
+    font-family: fantasy;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+/* web developer */
+h2{
+    display: flex;
+    position: absolute;
+    color: #d7adad;
+    left: 50%;
+    top: 31%;
+    font-size: 33PX;
+    font-family: monospace;
+    font-weight: 500;
+}
+
+/* bio */
+.bio{
+    display: flex;
+    position: absolute;
+    width: 800px;
+    height: 330px;
+    left: 44%;
+    top: 38%;
+    color: wheat
+}
+
+bio h3{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    text-align: justify;
+}
+
+
+/* skill */
+#skills {  
+    position: absolute;
+    display: flex;
+    background: linear-gradient(50deg, #1d1a1a,#2b1e1e); 
+    padding: 20px;  
+    top: 95%;
+    font-size: 25px;
+    text-align: center;  
+    font-family: 'Montserrat', sans-serif;  
+  }  
+        
+ #skills h2 {
+    position: absolute;
+    top: 5%;
+    font-size: 50px; 
+    font-family: "Modak", system-ui;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+  }
+
+  #skills ul {  
+    list-style: none;  
+    padding: 0;  
+    margin: 0;  
+    top: 35%;
+    left: 11%;
+    display: inline;
+    position: absolute;
+  }  
+
+  #skills li {  
+    display: inline-block;  
+    margin: 10px;  
+    padding: 30px;  
+    border: 1px solid #ddd;  
+    border-radius: 10px;  
+    background-color: #f1d2d2;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    transition: all 0.3s ease-in-out;  
+    
+  }  
+    
+  #skills li:hover {  
+    transform: scale(1.1);  
+    box-shadow: 0 0 40px rgba(232, 26, 26, 0.518);  
+  }  
+    
+  #skills li i {  
+    font-size: 24px;  
+    margin-right: 10px; 
+    color: #8f0606;  
+    transition: color 0.3s ease-in-out;  
+  }  
+    
+  #skills li:hover i {  
+    color: #000000;  
+  }  
+    
+  #skills li span {  
+    font-size: 18px;  
+    font-weight: bold;  
+    text-align: center;
+    margin-bottom: 5px;  
+    font-family: 'Lato', sans-serif;    
+  }  
+    
+  #skills li p {  
+    font-size: 16px;  
+    color: #5c2020;  
+    font-family: 'Open Sans', sans-serif;  
+  }  
+    
+  #skills li:hover p {  
+    color: #120d0d;  
+    font-weight: 500;
+  }  
+    
+  /* Animation on hover */  
+  #skills li:hover {   
+    animation: pulse 0.5s ease-in-out;  
+  }  
+
+
+  /* circle behind skills */
+  .shadow{
+    display: inline;
+    position: relative;
+    background-color:#f1d2d2 ;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 34px 10px rgb(218, 114, 114);   
+    opacity: 0.05;
+    left: 10%;
+    top: 55%;
+  }
+  
+  .shadow1{
+    display: inline;
+    position: absolute;
+    background-color:#f1d2d2 ;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 34px 10px rgb(218, 114, 114);   
+    opacity: 0.05;
+    left: 45%;
+    bottom: 45%;
+  }
+
+  .shadow2{
+    display: inline;
+    position: absolute;
+    background-color:#f1d2d2 ;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 34px 10px rgb(218, 114, 114);   
+    opacity: 0.05;
+    left: 25%;
+    top: 0%;
+  }
+
+  .shadow3{
+    display: inline;
+    position: absolute;
+    background-color:#f1d2d2 ;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 34px 10px rgb(218, 114, 114);   
+    opacity: 0.05;
+    left: 60%;
+    top: 38%;
+  }
+
+.shadow4{
+    display: inline;
+    position: absolute;
+    background-color:#f1d2d2 ;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 34px 10px rgb(218, 114, 114);   
+    opacity: 0.05;
+    left: 78%;
+    top: -2%;
+}
+
+.shadow5{
+    display: inline;
+    position: absolute;
+    background-color:#f1d2d2 ;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 34px 10px rgb(218, 114, 114);   
+    opacity: 0.05;
+    left: 85%;
+    top: 72%;
+}
+
+.shadow6{
+    display: inline;
+    position: absolute;
+    background-color:#f1d2d2 ;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 34px 10px rgb(218, 114, 114);   
+    opacity: 0.05;
+    left: 35%;
+    top: 79%;
+}
+
+/* project  */
+.project{
+  display: inline;
+  position: absolute;
+  background: linear-gradient(50deg, #1d1a1a,#2b1e1e); 
+  top: 155%;
+  height: 350px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* heading of project */
+.project h2{
+   position: absolute;
+   display: inline;
+   font-size: 50px;
+   top: 5%;
+   font-family: "EB Garamond", serif;
+   font-optical-sizing: auto;
+   font-weight: weight;
+   font-style: normal;
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+/* project unordered list */
+.project ul{
+    display: inline;
+    position: absolute;
+    margin: 25px; 
+    margin-left:  24%;  
+    top: 20%;
+    list-style:none;
+}
+
+/* list of project or cards */
+.project li{
+  display: inline-block;
+  position: relative;
+  width: 185px;
+  height: 270px;
+  padding: 0 2px;
+  background:linear-gradient(50deg,#f3929f,#ffdde1);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(243, 146, 159,0.3);
+  transition: 1s;
+  margin-right: 30px;
+}
+
+/* heading of cards */
+.project li span{
+  display: inline;
+  position: absolute;
+  font-size: 25px;
+  margin-left: 20%;
+  margin-top: 15px;
+  font-weight:bold;
+}
+/* image in cards */
+.project li img{
+   display: inline;
+   position: absolute;
+   margin-top:-50px;
+   left: 0;
+   width: 100%;
+   height: 60%;
+}
+
+/* paragraph in cards */
+.project li p{
+  display: inline;
+  position: absolute;
+  margin-top:150px;
+  margin-left: 5%;
+  font-size: 15px;
+}
+/* Cards hover */
+.project li:hover{
+  transform: translate(15px, 15px);
+  box-shadow: 0 0 40px rgba(101, 207, 221, 0.36); 
+}
+
+/* netflix photo */
+#netflix{
+   display: inline;
+   position: absolute;
+   margin-top:-30px;
+   left: 1px;
+   width: 90%;
+   height: 30%;
+   margin-left: 9px;
+}
+
+
+/* bakery photo */
+#bakery{
+   display: inline;
+   position: absolute;
+   margin-top:-30px;
+   left: 1px;
+   width: 90%;
+   height: 30%;
+   margin-left: 9px;
+   border-radius:10px;
+}
+/* calculator photo */
+#calculator{
+   display: inline;
+   position: absolute;
+   margin-top:-30px;
+   left: 1px;
+   width: 90%;
+   margin-left: 10px;
+   height: 30%;
+   border-radius:10px;
+} 
+
+/* footer */
+footer{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(50deg, #3a3535,#533d3d);
+  top: 210vh;
+}
+
+/* BLOCK for heading and para */
+.footerhead{
+  display: block;
+  position: absolute;
+  width: 30%;
+  height: 50%;
+  top: 40px;
+  left: 1%;
+}
+
+/* let talk */
+.footerhead h1{
+  display: inline;
+  position: absolute;
+  left: 3%;
+  top: 0;
+}
+/* para */
+.footerhead p{
+  display: inline;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  color: #d3b959;
+  font-size: 18PX;
+  font-weight: 500;
+}
+/* line */
+.line{
+  display: flex ;
+  position: absolute;
+  width: 2px;
+  height: 25vh;
+  background-color: #f1f1f15b;
+  left: 605PX;
+  top: 30px;
+}
+
+/* contact box */
+
+.Contact{
+  display: inline-block;
+  position: relative;
+  /* background-color: wheat; */
+  width: 40%;
+  height: 180px;
+  top: 20px;
+  left: 42%;
+} 
+
+/* call  */
+.phone{
+  display:flex;
+  position: absolute;
+  margin: 25px;
+  left: 2px;
+  font-size: 18px;
+  color: azure;
+ 
+}
+ /* iframe of every logo */
+i{
+  padding-right:5px;
+}
+
+/* location */
+.location{
+  display:flex;
+  position: absolute;
+  margin: 25px;
+  left: 2px;
+  top: 29px;
+  font-size: 18px;
+  color: azure;
+}
+
+/* instagram */
+.insta{
+  display: flex;
+  position: absolute;
+  margin: 25px;
+  top: 35%;
+  left: 35%;
+  width: 50px;
+  height: 70px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer; 
+  font-size: 35px; 
+  box-shadow: 0 10px 20px -17px;
+  align-items: center;
+  justify-content: center;
+}
+
+.insta i{
+  border-radius: 50%;
+  color: #acb9c9;
+  text-shadow: 0 0 30px #b71414;
+}
+
+.insta:hover{
+    transform: scale(1.2);
+    box-shadow: 0 30px 35px -15px rgb(223, 43, 43);
+}
+
+/* discord */
+
+.discord  {
+display: flex;
+position: absolute;
+margin: 25px;
+top: 35%;
+left: 45%;
+width: 50px;
+height: 70px;
+border: none;
+background-color: transparent;
+cursor: pointer; 
+font-size: 35px; 
+box-shadow: 0 10px 20px -17px;
+align-items: center;
+justify-content: center;
+}
+
+.discord i{
+border-radius: 50%;
+color: #acb9c9;
+text-shadow: 0 0 25px #b71414;
+
+}
+
+.discord:hover{
+  transform: scale(1.2);
+  box-shadow: 0 30px 35px -15px rgb(223, 43, 43);
+}
+
+/* linkedin */
+
+.linkedin{
+    display: flex;
+    position: absolute;
+    margin: 25px;
+    top: 35%;
+    left: 55%;
+    width: 50px;
+    height: 70px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer; 
+    font-size: 35px; 
+    box-shadow: 0 10px 20px -17px;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .linkedin i{
+    border-radius: 50%;
+    color: #acb9c9;
+    text-shadow: 0 0 25px #b71414;
+    
+    }
+    
+    .linkedin:hover{
+      transform: scale(1.2);
+      box-shadow: 0 30px 35px -15px rgb(223, 43, 43);   
+     }
+
+    /* github */
+.github{
+  display: flex;
+  position: absolute;
+  margin: 25px;
+  top: 35%;
+  left: 65%;
+  width: 50px;
+  height: 70px;
+  border: none;
+  background-color:transparent;
+  cursor: pointer; 
+  font-size: 35px; 
+  box-shadow: 0 10px 20px -17px;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .github i{
+  border-radius: 50%;
+  color: #acb9c9;
+  text-shadow: 0 0 25px #b71414;  
+  }
+  
+  .github:hover{
+    transform: scale(1.2);
+    box-shadow: 0 30px 35px -15px rgb(223, 43, 43);   
+  }
+
+/* whatsapp */
+
+.whatsapp{
+  display: flex;
+  position: absolute;
+  margin: 25px;
+  top: 35%;
+  left: 75%;
+  width: 50px;
+  height: 70px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer; 
+  font-size: 35px; 
+  box-shadow: 0 10px 20px -17px;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .whatsapp i{
+  border-radius: 50%;
+  color: #acb9c9;
+  text-shadow: 0 0 25px #b71414; 
+  
+  }
+  
+  .whatsapp:hover{
+    transform: scale(1.2);
+    box-shadow: 0 30px 35px -15px rgb(223, 43, 43);   
+    }
+
+/* resume */
+
+.download{
+  display: flex;
+  position: absolute;
+  margin: 25px;
+  border-radius: 20px;
+  left: 95%;
+  width: 30%;
+  height: 50px;
+  background: linear-gradient(45deg, #320f0f,#d74848);  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 10px 32px 10px rgb(31, 29, 29);   
+
+}
+
+.download i{
+  display: flex;
+  position: absolute;
+  left: 8px;
+  color: rgb(177, 197, 214);
+  font-size: 25px;
+}
+
+.download a{
+  display: flex;
+  position: absolute;
+  font-size: 23px;
+  left: 40px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Signika Negative", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
